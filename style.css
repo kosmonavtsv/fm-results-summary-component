@@ -1,10 +1,7 @@
 :root {
   /* Colors */
   --clr-dark: hsla(223, 30%, 27%, 1);
-  --gradient-1: linear-gradient(
-    var(hsl(252, 100%, 63%)),
-    var(hsl(241, 81%, 54%))
-  );
+  --gradient-1: linear-gradient(hsl(252, 100%, 63%), hsl(241, 81%, 54%));
   --circle-gradient-1: hsla(256, 72%, 46%, 1);
   --clr-white: hsl(0, 0%, 100%);
   --clr-light-blue: hsl(241, 100%, 89%);
