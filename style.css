@@ -1,53 +1,21 @@
-/*
-  https://stackoverflow.com/a/73980194
-*/
-
 :root {
-  /* Primary */
-
-  --clr-reaction: 0, 100%, 67%;
-  --clr-memory: 39, 100%, 56%;
-  --clr-verbal: 166, 100%, 37%;
-  --clr-visual: 234, 85%, 45%;
+  /* Colors */
   --clr-dark: hsla(223, 30%, 27%, 1);
-
-  /* Gradients */
-
-  --gradient-1: linear-gradient(var(--score-gradient-1), var(--score-gradient-2));
-  --score-gradient-1: hsl(252, 100%, 63%);
-  --score-gradient-2: hsl(241, 81%, 54%);
-  /* circle */
+  --gradient-1: linear-gradient(
+    var(hsl(252, 100%, 63%)),
+    var(hsl(241, 81%, 54%))
+  );
   --circle-gradient-1: hsla(256, 72%, 46%, 1);
-  --circle-gradient-2: hsla(241, 72%, 46%, 0.1);
-
-  /* Neutral */
-
   --clr-white: hsl(0, 0%, 100%);
-  --clr-pale-blue: hsl(221, 100%, 96%);
   --clr-light-blue: hsl(241, 100%, 89%);
   --clr-very-light-blur: hsl(220, 100%, 96%);
-  --clr-dark-gray-blue: hsl(224, 30%, 27%);
 
   /* Typography */
   --f-family: 'Hanken Grotesk', sans-serif;
-  --f-size: 1.125rem;
-
   --fs-800: 3.5rem;
-  --fw-800: 800;
-  --lh-800: 4.5rem;
-
   --fs-700: 1.5rem;
-  --fw-700: 700;
-  --lh-700: normal;
-
   --fs-600: 1.125rem;
-  --fw-600: 700;
-  --lh-600: normal;
-
   --fs-400: 1rem;
-  --fw-400: 500;
-  --lh-400: normal;
-
   --fw-bold: 700;
 }
 
@@ -76,16 +44,16 @@ button {
 /* ------------- */
 
 .font-800 {
-  font: var(--fw-800) var(--fs-800) / var(--lh-800) var(--f-family);
+  font: 800 var(--fs-800) / 4.5rem var(--f-family);
 }
 .font-700 {
-  font: var(--fw-700) var(--fs-700) / var(--lh-700) var(--f-family);
+  font: 700 var(--fs-700) / normal var(--f-family);
 }
 .font-600 {
-  font: var(--fw-600) var(--fs-600) / var(--lh-600) var(--f-family);
+  font: 700 var(--fs-600) / normal var(--f-family);
 }
 .font-400 {
-  font: var(--fw-400) var(--fs-400) / var(--lh-400) var(--f-family);
+  font: 500 var(--fs-400) / normal var(--f-family);
 }
 .clr-light-blue {
   color: var(--clr-light-blue);
@@ -99,36 +67,13 @@ button {
 .clr-white {
   color: var(--clr-white);
 }
-.clr-reaction {
-  color: hsl(var(--clr-reaction));
-}
-.clr-memory {
-  color: hsl(var(--clr-memory));
-}
-.bg-reaction {
-  background: hsla(var(--clr-reaction), 0.08);
-}
-.bg-memory {
-  background: hsla(var(--clr-memory), 0.08);
-}
-.bg-verbal {
-  background: hsla(var(--clr-verbal), 0.08);
-}
-.bg-visual {
-  background: hsla(var(--clr-visual), 0.08);
-}
-.clr-verbal {
-  color: hsl(var(--clr-verbal));
-}
-.clr-visual {
-  color: hsl(var(--clr-visual));
-}
 .clr-dark {
   color: var(--clr-dark);
 }
 .bold {
   font-weight: var(--fw-bold);
 }
+
 /* ------------- */
 /* Page          */
 /* ------------- */
@@ -144,6 +89,7 @@ body {
   min-height: 100vh;
 }
 
+/* https://stackoverflow.com/a/73980194 */
 .result-wrapper {
   flex: 1;
 }
@@ -157,6 +103,8 @@ body {
   font-family: var(--f-family);
   max-width: 46rem;
 }
+
+/* Result Score board */
 
 .result-score {
   border-bottom-right-radius: 2rem;
@@ -193,6 +141,8 @@ body {
   text-align: center;
 }
 
+/* Result Summary list */
+
 .result-summary {
   padding: 1.5rem 1.87rem 1.87rem 1.87rem;
   display: flex;
@@ -216,15 +166,30 @@ body {
   align-items: center;
   padding: 1.03rem 1.09rem;
   gap: 0.75rem;
+  background: hsla(var(--clr-indicator), 0.08);
+  border-radius: 0.75rem;
+}
+
+.result-summary__indicator-name {
+  color: hsl(var(--clr-indicator));
+}
+
+.result-summary__indicator--reaction {
+  --clr-indicator: 0, 100%, 67%;
+}
+.result-summary__indicator--memory {
+  --clr-indicator: 39, 100%, 56%;
+}
+.result-summary__indicator--verbal {
+  --clr-indicator: 166, 100%, 37%;
+}
+.result-summary__indicator--visual {
+  --clr-indicator: 234, 85%, 45%;
 }
 
 .result-summary__100 {
   opacity: 0.5;
   margin-left: 0.25rem;
-}
-
-.result-summary__indicator {
-  border-radius: 0.75rem;
 }
 
 .result-summary__btn {
