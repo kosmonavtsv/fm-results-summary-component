@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container bg-very-light-blur">
+      <div class="result-wrapper">
+        <div class="result bg-white">
+          <section class="result-score font-400">
+            <h2 class="font-600 clr-light-blue">Your Result</h2>
+            <div class="result-score__score">
+              <span class="font-800 clr-white">76</span>
+              <spam class="result-score__score-100 clr-light-blue">of 100</spam>
+            </div>
+            <p class="font-700 clr-white">Great</p>
+            <p class="result-score__text clr-light-blue">
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
+          </section>
+          <section class="result-summary font-400">
+            <h2 class="font-600 result-summary__title">Summary</h2>
+            <div class="result-summary__indicators">
+              <div class="result-summary__indicator bg-reaction">
+                <img src="assets/images/icon-reaction.svg" alt="" />
+                <span class="clr-reaction">Reaction</span>
+                <div class="bold clr-dark">
+                  <span>80</span>
+                  <span class="result-summary__100"> / 100</span>
+                </div>
+              </div>
+              <div class="result-summary__indicator bg-memory">
+                <img src="assets/images/icon-memory.svg" alt="" />
+                <span class="clr-memory">Memory</span>
+                <div class="bold clr-dark">
+                  <span>92</span>
+                  <span class="result-summary__100"> / 100</span>
+                </div>
+              </div>
+              <div class="result-summary__indicator bg-verbal">
+                <img src="assets/images/icon-verbal.svg" alt="" />
+                <span class="clr-verbal">Verbal</span>
+                <div class="bold clr-dark">
+                  <span>61</span>
+                  <span class="result-summary__100"> / 100</span>
+                </div>
+              </div>
+              <div class="result-summary__indicator bg-visual">
+                <img src="assets/images/icon-visual.svg" alt="" />
+                <span class="clr-visual">Visual</span>
+                <div class="bold">
+                  <span>72</span>
+                  <span class="result-summary__100">/ 100</span>
+                </div>
+              </div>
+            </div>
+            <button class="result-summary__btn">Continue</button>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
