@@ -26,7 +26,7 @@ Users should be able to:
 
 |Desktop|Mobile|
 |---|---|
-|<img src="screenshots/desktop.png" width="300px">|<img src="screenshots/mobile.png" width="1500px">|
+|<img src="screenshots/desktop.png" height="300px">|<img src="screenshots/mobile.png" height="300px">|
 
 ### Links
 
