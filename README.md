@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [frontendmentor.io solution]()
+- Solution URL: [frontendmentor.io](https://www.frontendmentor.io/solutions/results-summary-component-css-container-queries-container-i_ktgl52t-)
 - Live Site URL: [Github Pages](https://kosmonavtsv.github.io/fm-results-summary-component)
 
 ## My process
