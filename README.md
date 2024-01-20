@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [frontendmentor.io solution]()
-- Live Site URL: [Github Pages](https://kosmonavtsv.github.io/results-summary-component)
+- Live Site URL: [Github Pages](https://kosmonavtsv.github.io/fm-results-summary-component)
 
 ## My process
 
